@@ -1,60 +1,35 @@
-# 🌸 Pink Shelf
+# 🌸 Pink Shelf — Web Application
 
-A soft pink product catalog built with HTML, CSS, and JavaScript.
-
-Pink Shelf is a responsive web application that displays products using the DummyJSON API. It allows users to browse products, search for items, filter by category, sort by price, and view product details.
-
-## ✨ Features
-
-- 🛍️ Fetch and display products from an API
-- 🔎 Search products by name
-- 🗂️ Filter products by category
-- 💰 Sort products by price
-- 🪞 View product details in a modal window
-- 📱 Responsive design
-- ⏳ Loading and error states
-- 🌷 Custom pink-themed interface
-
-## 🛠️ Technologies
-
-- **HTML5** — page structure
-- **CSS3** — styling and responsive layout
-- **JavaScript (ES6+)** — application logic and DOM manipulation
-- **Fetch API** — retrieving product data
-- **DummyJSON API** — product data source
-
-## 🚀 Getting Started
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/fidanmaharramli/JavaScript-Product-API.git
-   ```
-
-2. Open the project folder.
-
-3. Open `index.html` in your browser.
-
-## 📁 Project Structure
-
-```text
-JavaScript-Product-API/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
-
-## 🔗 API
-
-Product data is provided by [DummyJSON](https://dummyjson.com/products).
-
-## 👩‍💻 Author
-
-**Fidan Maharramli**
-
-[GitHub Profile](https://github.com/fidanmaharramli)
+Интерактивное веб-приложение для просмотра и поиска товаров, разработанное в рамках практического задания по веб-разработке. Проект получает актуальные данные о продуктах через стороннее API (DummyJSON) и предоставляет удобный интерфейс с возможностью фильтрации, сортировки и детального просмотра.
 
 ---
 
-Made with 💗 and JavaScript.
+## 📌 Особенности и функциональность
+
+- 🔍 **Поиск в реальном времени:** Фильтрация товаров по названию по мере ввода текста.
+- 🏷 **Фильтрация по категориям:** Динамическая загрузка категорий из API и сортировка по ним.
+- ⬆️⬇️ **Сортировка по цене:** Возможность отсортировать товары от дешевых к дорогим и наоборот.
+- 🖼 **Модальное окно:** Просмотр подробных сведений о товаре (изображение, полное описание, цена) при клике на кнопку «Подробнее».
+- 📱 **Responsive Design:** Полная адаптивность под мобильные устройства, планшеты и ПК.
+- ⚡ **Обработка состояний:** Индикация загрузки (loading) и понятное уведомление об ошибке в случае проблем с сетью.
+
+---
+
+## 🛠 Технологии
+
+- **HTML5** — семантическая структура страницы.
+- **CSS3** — стилизация, Flexbox, CSS Grid, адаптивная верстка и кастомное оформление модального окна.
+- **JavaScript (ES6+)** — логика приложения, манипуляции с DOM и обработка событий.
+- **Fetch API (AJAX / Async/Await)** — асинхронные запросы к внешнему API.
+- **DummyJSON API** — источник данных о товарах и категориях.
+
+---
+
+## 📁 Структура проекта
+
+```text
+.
+├── index.html       # Основная HTML-структура
+├── style.css        # Стили приложения и адаптивность
+├── script.js       # Логика работы с API, фильтрами и модальным окном
+└── README.md        # Документация проекта
