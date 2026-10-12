@@ -8,28 +8,60 @@
 </head>
 <body>
     
-    <header>
+    <header id="home">
         <div class="header-container">
             <h1>Pink Shelf</h1>    
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Products</a>
-                <a href="#">About</a>
+                <a href="#home">Главная</a>
+                <a href="#products">Товары</a>
+                <a href="#about">О нас</a>   
             </nav>
         </div>
     </header>
     <main>
         <section class="hero">         
-            <h2>Find Your Perfect Product</h2>       
-            <p>Discover a curated collection of beautiful items designed to bring style, warmth, and inspiration into your daily life.</p>      
-            <button>Explore Products</button>
+            <h2>Найдите свой идеальный товар</h2>       
+            <p>Откройте для себя коллекцию прекрасных вещей, созданных для того, чтобы принести стиль, тепло и вдохновение в вашу повседневную жизнь.</p>      
+            <button onclick="document.querySelector('#products').scrollIntoView({ behavior: 'smooth' })">Смотреть товары</button>
         </section>
-        <section class="products-section">      
-            <h2>Our Products</h2>      
+        
+        <section class="products-section" id="products">      
+            <h2>Наши товары</h2>      
+            
+            <div class="filters-container">
+                <input type="text" class="search-input" placeholder="Поиск товаров...">
+                
+                <select class="category-filter">
+                    <option value="all">Все категории</option>
+                </select>
+                
+                <select class="sort-filter">
+                    <option value="low">Сначала дешевле</option>
+                    <option value="high">Сначала дороже</option>
+                </select>
+            </div>
+            
+            <p class="status-message">Загрузка товаров...</p>
+            <p class="products-count"></p>
             <div class="products-container"></div>
+        </section>
+
+        <section class="about-section" id="about">
+            <h2>О Pink Shelf</h2>
+            <p>Pink Shelf — уютный каталог товаров, где можно искать, сравнивать и открывать для себя что-то новое.</p>
         </section>
     </main>
  
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <img class="modal-image" src="" alt="">
+            <h2 class="modal-title"></h2>
+            <p class="modal-price"></p>
+            <p class="modal-description"></p>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
